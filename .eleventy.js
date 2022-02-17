@@ -1,5 +1,10 @@
 module.exports = function(eleventyConfig) {
 
+    eleventyConfig.addPassthroughCopy("src/assets/");
+
+    eleventyConfig.addLayoutAlias('main', 'main.njk');
+    eleventyConfig.addLayoutAlias('post', 'post.njk');
+
     return {
       dir: {
           input: "src",
@@ -13,5 +18,5 @@ module.exports = function(eleventyConfig) {
       markdownTemplateEngine: 'njk',
       passthroughFileCopy: true
     };
-    
+
 };

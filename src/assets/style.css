@@ -1,0 +1,15 @@
+.container {
+    font-family: 'Inter', sans-serif;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 42em) {
+    .container {
+        margin: auto;
+        width: 42em;
+    }
+}
+
+h1 {
+    font-size: 48px;
+}
